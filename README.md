@@ -1,17 +1,15 @@
+**ESP32 Weather Station README**
+
+This repository contains code for an ESP32 Weather Station
+that gathers data from a connected sensor and displays it
+on a web interface. The project is built using Node.js,
+Socket.io, Express, and the SerialPort library. Below you
+will find instructions on setting up and running the weather station.
+ 
 ![Website](weatherstation.png)
 
 
-```markdown
-# ESP32 Weather Station README
 
-
-
-
-This repository contains code for an ESP32 Weather Station
- that gathers data from a connected sensor and displays it
- on a web interface. The project is built using Node.js,
-Socket.io, Express, and the SerialPort library. Below you
- will find instructions on setting up and running the weather station.
 
 ## Prerequisites
 
@@ -25,8 +23,8 @@ Before you begin, make sure you have the following software and hardware compone
 - **Node.js**: Ensure that Node.js is installed on your development machine. If not, you can download it from [nodejs.org](https://nodejs.org/).
 
 - **SerialPort**: Install the SerialPort library using npm:
-
-  ```bash
+  
+```
   npm install serialport
   ```
 
