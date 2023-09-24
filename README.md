@@ -5,12 +5,14 @@ that gathers data from a connected sensor and displays it
 on a web interface. The project is built using Node.js,
 Socket.io, Express, and the SerialPort library. Below you
 will find instructions on setting up and running the weather station.
+
+Additionally, using a free api from [Open UV](https://www.openuv.io/) 
+you can display UV data such as the current UV and the max UV for the day.
+
  
 ![Website](weatherstation.png)
 
 The website
-
-
 
 
 ## Prerequisites
@@ -130,3 +132,4 @@ Before you begin, make sure you have the following software and hardware compone
 **Images used:**
 - https://www.flaticon.com/free-icon/thermometer_4158502
 - https://www.freepik.com/icon/water-drop_3046562
+- https://cdn0.iconfinder.com/data/icons/small-nature/50/3_Sep-11-512.png
