@@ -31,7 +31,9 @@ Before you begin, make sure you have the following software and hardware compone
 DHT22 Wiring Guide 
 
 Connect the VCC to the 3v3
+<br>
 Connect GND to GND 
+<br>
 Connect S to GPIO 17 (data)
 
 ![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/f40ea14d-d420-40b8-a308-ef8e8bd0305f)
