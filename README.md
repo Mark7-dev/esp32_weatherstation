@@ -1,6 +1,11 @@
 
+
+
 ```markdown
 # ESP32 Weather Station README
+
+![Website](weatherstation.png)
+
 
 This repository contains code for an ESP32 Weather Station
  that gathers data from a connected sensor and displays it
