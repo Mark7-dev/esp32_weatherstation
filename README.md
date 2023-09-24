@@ -116,10 +116,6 @@ Before you begin, make sure you have the following software and hardware compone
 - Express v4.18.2
 - Johnny-five v2.1.0
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Thanks to the open-source community for providing the necessary libraries and tools to build this weather station.
