@@ -87,6 +87,7 @@ Before you begin, make sure you have the following software and hardware compone
 - Socket.io v2.0.4
 - SerialPort v12.0.0
 - Express v4.18.2
+- Johnny-five v2.1.0
 
 ## License
 
@@ -96,6 +97,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to the open-source community for providing the necessary libraries and tools to build this weather station.
 
-Feel free to customise and improve upon this weather station project according to your needs. If you encounter any issues or have suggestions for enhancements, please create a GitHub issue in this repository.
+- resources used: 
+https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/
+https://www.upesy.com/blogs/tutorials/dht11-humidity-temperature-sensor-with-arduino-code-on-esp32-board#
+https://medium.com/@svsh227/nodejs-with-arduino-5020489f3ec7
+https://www.engineersgarage.com/how-to-build-a-node-js-server-to-control-arduino-from-a-webpage/
 ```
 
