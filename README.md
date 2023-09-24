@@ -36,6 +36,17 @@ Before you begin, make sure you have the following software and hardware compone
   ```bash
   npm install socket.io@2.0.4
   ```
+- **Arduino IDE**: You will need the arduino IDE to run the ino file
+
+  ```
+  https://www.arduino.cc/en/software
+  ```
+- **DHT Library**: In order to use the DHT22 or DHT11 to read temperatures you will need to get the DHT adafruit library
+
+  ```
+  https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
+  ```
+
 
 ## Getting Started
 
@@ -46,16 +57,20 @@ Before you begin, make sure you have the following software and hardware compone
    ```
 
 2. Navigate to the project folder:
-
-   ```bash
+  ```bash
    cd esp32-weather-station
    ```
+3. Connect ESP32 to your computer
+   
+4. Open the Arduino IDE
 
-3. Connect your ESP32 board to your computer.
+5. Upload the code in from the weather_app.ino onto your ESP32 board.
+   
+6. Close the IDE, to free up the port
 
-4. Modify the `index.html` file if needed. This HTML file is served to clients and displays weather information.
+7. Modify the `index.html` file if needed. This HTML file is served to clients and displays weather information.
 
-5. Update the `path` property in the Node.js code (`app.js`) to match the serial port where your ESP32 is connected:
+8. Update the `path` property in the Node.js code (`app.js`) to match the serial port where your ESP32 is connected:
 
    ```javascript
    const port = new SerialPort.SerialPort({
@@ -68,13 +83,13 @@ Before you begin, make sure you have the following software and hardware compone
    });
    ```
 
-6. Run the Node.js application:
+9. Run the Node.js application:
 
    ```bash
    node app.js
    ```
 
-7. Access the weather station web interface by opening a web browser and navigating to `http://localhost:6900`.
+10. Access the weather station web interface by opening a web browser and navigating to `http://localhost:6900`.
 
 ## Usage
 
@@ -104,7 +119,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to the open-source community for providing the necessary libraries and tools to build this weather station.
 
-- resources used: 
+**Resources used:** 
 - https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
 - https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/
 - https://www.upesy.com/blogs/tutorials/dht11-humidity-temperature-sensor-with-arduino-code-on-esp32-board#
