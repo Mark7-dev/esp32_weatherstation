@@ -1,4 +1,3 @@
-Certainly! Here's the README in Markdown format for your ESP32 Weather Station:
 
 ```markdown
 # ESP32 Weather Station README
