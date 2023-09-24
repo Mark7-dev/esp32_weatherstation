@@ -75,7 +75,7 @@ Before you begin, make sure you have the following software and hardware compone
 
 - The temperature and humidity values are updated automatically whenever new data is received from the ESP32.
 
-- You can customize the web interface by modifying the `index.html` file.
+- You can customise the web interface by modifying the `index.html` file.
 
 ## Author
 
@@ -96,7 +96,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to the open-source community for providing the necessary libraries and tools to build this weather station.
 
-Feel free to customize and improve upon this weather station project according to your needs. If you encounter any issues or have suggestions for enhancements, please create a GitHub issue in this repository.
+Feel free to customise and improve upon this weather station project according to your needs. If you encounter any issues or have suggestions for enhancements, please create a GitHub issue in this repository.
 ```
 
-You can copy and paste this Markdown code into a README.md file in your repository.
