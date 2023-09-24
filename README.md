@@ -8,6 +8,8 @@ will find instructions on setting up and running the weather station.
  
 ![Website](weatherstation.png)
 
+The website
+
 
 
 
