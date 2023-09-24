@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather</title>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+        <script src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js'></script>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -77,6 +78,39 @@
             </div>
         </div>
 
+        <p>UV Index: <span id="uvIndex"></span></p>
+        <p>UV Max: <span id="uvMax"></span></p>
+        <p>Ozone: <span id="ozone"></span></p>
+
+        <script>
+            var apiKey = "openuv-1pk7vrlmx1kufq-io";
+            var latitude = -35.38;
+            var longitude = 149.11;
+            
+            var myHeaders = new Headers();
+            myHeaders.append("x-access-token", apiKey);
+            myHeaders.append("Content-Type", "application/json");
+            
+            var requestOptions = {
+              method: 'GET',
+              headers: myHeaders,
+              redirect: 'follow'
+            };
+            
+            // Fetch UV data from the OpenUV API
+            fetch(`https://api.openuv.io/api/v1/uv?lat=${latitude}&lng=${longitude}&alt=100&dt=`, requestOptions)
+              .then(response => response.json())
+              .then(data => {
+                // Update the HTML elements with UV data
+                document.getElementById('uvIndex').textContent = data.result.uv;
+                document.getElementById('uvMax').textContent = data.result.uv_max;
+                document.getElementById('ozone').textContent = data.result.ozone;
+                // Add code to display other relevant data if needed
+              })
+              .catch(error => console.log('Error:', error));
+            </script>
+            
+
         <script>
             var socket = io();
     
@@ -85,7 +119,7 @@
                 document.getElementById('humidity').textContent = data.humidity;
                 document.getElementById('temperature').textContent = data.temperature;
             });
-        </script>
+        </script> 
 
     </body>
 </html>
