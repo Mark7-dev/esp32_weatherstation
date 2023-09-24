@@ -41,8 +41,12 @@ Connect S to GPIO 17 (data)
 Wiring guide for the DHT22
 
 DHT11 Wiring Guide
+<br>
+DHT11 Pinout
 
 ![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/ad7153f9-281e-413b-8a67-81e8d8491e05)
+
+![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/ec1c1350-9def-4a3b-8a01-970eeb99a9e4)
 
 
   
