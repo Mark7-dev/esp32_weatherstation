@@ -126,4 +126,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - https://medium.com/@svsh227/nodejs-with-arduino-5020489f3ec7
 - https://www.engineersgarage.com/how-to-build-a-node-js-server-to-control-arduino-from-a-webpage/
 
-
+**Images used:**
+- https://www.flaticon.com/free-icon/thermometer_4158502
+- https://www.freepik.com/icon/water-drop_3046562
