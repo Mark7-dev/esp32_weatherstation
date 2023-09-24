@@ -2,13 +2,20 @@
 ```markdown
 # ESP32 Weather Station README
 
-This repository contains code for an ESP32 Weather Station that gathers data from a connected sensor and displays it on a web interface. The project is built using Node.js, Socket.io, Express, and the SerialPort library. Below you will find instructions on setting up and running the weather station.
+This repository contains code for an ESP32 Weather Station
+ that gathers data from a connected sensor and displays it
+ on a web interface. The project is built using Node.js,
+Socket.io, Express, and the SerialPort library. Below you
+ will find instructions on setting up and running the weather station.
 
 ## Prerequisites
 
 Before you begin, make sure you have the following software and hardware components ready:
 
 - **ESP32**: The ESP32 microcontroller board with a temperature and humidity sensor connected to it.
+
+- **Temperature and Humidity Sensor**: In my project I am using a DHT22, however you can also use a DHT11 as well. You will just need to change the C++ code to define
+ the sensor as a DHT11 instead of a DHT22
 
 - **Node.js**: Ensure that Node.js is installed on your development machine. If not, you can download it from [nodejs.org](https://nodejs.org/).
 
@@ -103,5 +110,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - https://www.upesy.com/blogs/tutorials/dht11-humidity-temperature-sensor-with-arduino-code-on-esp32-board#
 - https://medium.com/@svsh227/nodejs-with-arduino-5020489f3ec7
 - https://www.engineersgarage.com/how-to-build-a-node-js-server-to-control-arduino-from-a-webpage/
-```
+
 
