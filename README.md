@@ -98,10 +98,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to the open-source community for providing the necessary libraries and tools to build this weather station.
 
 - resources used: 
-https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
-https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/
-https://www.upesy.com/blogs/tutorials/dht11-humidity-temperature-sensor-with-arduino-code-on-esp32-board#
-https://medium.com/@svsh227/nodejs-with-arduino-5020489f3ec7
-https://www.engineersgarage.com/how-to-build-a-node-js-server-to-control-arduino-from-a-webpage/
+- https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+- https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/
+- https://www.upesy.com/blogs/tutorials/dht11-humidity-temperature-sensor-with-arduino-code-on-esp32-board#
+- https://medium.com/@svsh227/nodejs-with-arduino-5020489f3ec7
+- https://www.engineersgarage.com/how-to-build-a-node-js-server-to-control-arduino-from-a-webpage/
 ```
 
