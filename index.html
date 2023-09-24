@@ -55,6 +55,26 @@
                 font-weight: bold;
                 font-size: 24px;
             }
+            .uv-index {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .uv-index .icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .uv-index p {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            #uv-index, #max-uv-index {
+                font-weight: bold;
+                font-size: 24px;
+            }
         </style>
     </head>
     <body>
@@ -64,23 +84,28 @@
         
         <div class="weather-container">
             <h1>Weather Forecast</h1>
-            <div class="weather-info">
-                <div class="temperature">
 
+            <div class="weather-info">
+
+                <div class="temperature">
                     <img src="https://cdn-icons-png.flaticon.com/512/4158/4158502.png" alt="Temperature Icon" class="icon">
                     <p>Temperature<span id="temperature"></span>&deg;C</p>
-                    
                 </div>
+
                 <div class="humidity">
                     <img src="https://cdn-icons-png.flaticon.com/512/3046/3046562.png" alt="Humidity Icon" class="icon">
                     <p>Humidity <span id="humidity"></span> %</p>
                 </div>
+
+                <div class="uv-index">
+                    <!-- UV Index Icon -->
+                    <img src="https://cdn0.iconfinder.com/data/icons/small-nature/50/3_Sep-11-512.png" alt="UV Index Icon" class="icon">
+                    <p>UV Index: <span id="uv-index"></span></p>
+                    <p>Max UV Index: <span id="max-uv-index"></span></p>
+                </div>
+                
             </div>
         </div>
-
-        <p>UV Index: <span id="uvIndex"></span></p>
-        <p>UV Max: <span id="uvMax"></span></p>
-        <p>Ozone: <span id="ozone"></span></p>
 
         <script>
             var apiKey = "openuv-1pk7vrlmx1kufq-io";
@@ -102,8 +127,8 @@
               .then(response => response.json())
               .then(data => {
                 // Update the HTML elements with UV data
-                document.getElementById('uvIndex').textContent = data.result.uv;
-                document.getElementById('uvMax').textContent = data.result.uv_max;
+                document.getElementById('uv-index').textContent = data.result.uv;
+                document.getElementById('max-uv-index').textContent = data.result.uv_max;
                 document.getElementById('ozone').textContent = data.result.ozone;
                 // Add code to display other relevant data if needed
               })
