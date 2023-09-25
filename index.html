@@ -107,7 +107,21 @@
             </div>
         </div>
 
+        <div id="sunscreenMessage" style="display: none;">
+            <img src="https://cdn-icons-png.flaticon.com/512/3069/3069261.png" alt="Sunscreen Icon" class = "icon"/>
+            <p>You need sunscreen!</p>
+        </div>
+
         <script>
+            var element = document.getElementById("uv-index");
+            var number = parseFloat(element.textContent);
+
+            if (number > 3) {
+                console.log("Put some sunscreen on!");
+            } else {
+                console.log("The number is not greater than 3.");
+            }
+
             var apiKey = "openuv-1pk7vrlmx1kufq-io";
             var latitude = -35.38;
             var longitude = 149.11;
@@ -133,6 +147,8 @@
                 // Add code to display other relevant data if needed
               })
               .catch(error => console.log('Error:', error));
+
+              
             </script>
             
 
