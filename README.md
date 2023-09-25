@@ -26,7 +26,7 @@ Before you begin, make sure you have the following software and hardware compone
 
 - **Node.js**: Ensure that Node.js is installed on your development machine. If not, you can download it from [nodejs.org](https://nodejs.org/).
 
-- **SerialPort**: Install the SerialPort library using npm:
+
 
 DHT22 Wiring Guide 
 
@@ -48,7 +48,9 @@ DHT11 Pinout
 
 ![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/ec1c1350-9def-4a3b-8a01-970eeb99a9e4)
 
+<br>
 
+- **SerialPort**: Install the SerialPort library using npm:
   
 ```
   npm install serialport
