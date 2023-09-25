@@ -25,10 +25,12 @@ Before you begin, make sure you have the following software and hardware compone
  the sensor as a DHT11 instead of a DHT22
 
 - **Node.js**: Ensure that Node.js is installed on your development machine. If not, you can download it from [nodejs.org](https://nodejs.org/).
+  
+- **SerialPort**: Install the SerialPort library using npm:
 
 
 
-DHT22 Wiring Guide 
+## DHT22 Wiring Guide 
 
 Connect the VCC to the 3v3
 <br>
@@ -50,11 +52,13 @@ DHT11 Pinout
 
 <br>
 
+## Installation
+
 - **SerialPort**: Install the SerialPort library using npm:
   
 ```
-  npm install serialport
-  ```
+npm install serialport
+```
 
 - **Express**: Install the Express library using npm:
 
