@@ -75,6 +75,12 @@
                 font-weight: bold;
                 font-size: 24px;
             }
+
+            #center{
+                font-size: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -111,6 +117,14 @@
             <img src="https://cdn-icons-png.flaticon.com/512/3069/3069261.png" alt="Sunscreen Icon" class = "icon"/>
             <p>You need sunscreen!</p>
         </div>
+        
+        <div class = "weather-container" id="weatherapi-weather-widget-4"></div>
+        <script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=130883&wid=4&tu=1&div=weatherapi-weather-widget-4' async></script><noscript><a href="https://www.weatherapi.com/weather/q/fyshwick-130883" alt="Hour by hour Fyshwick weather">10 day hour by hour Fyshwick weather</a></noscript>
+          
+
+        
+        <p id = "center">Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>
+
 
         <script>
             var element = document.getElementById("uv-index");
