@@ -52,14 +52,14 @@ DHT11 Pinout
 
 <br>
 
-** There are two ways you can install the libraries ** 
+## Installation
 
-First: Go into your package.json and put these libraries in the dependencies
+Go into your package.json and put these libraries in the dependencies
 
 ```
-    "axios": "^1.5.0",
-    "express": "^4.18.2",
-    "socket.io": "^2.0.4"
+"axios": "^1.5.0",
+"express": "^4.18.2",
+"socket.io": "^2.0.4"
 
 ```
 
@@ -69,35 +69,16 @@ After putting these libraries into your dependencies, go to the terminal and typ
 npm install
 ```
 
-## Installation
-
-- **SerialPort**: Install the SerialPort library using npm:
-  
-```
-npm install serialport
-```
-
-- **Express**: Install the Express library using npm:
-
-  ```bash
-  npm install express
-  ```
-
-- **Socket.io**: Install the Socket.io library using npm:
-
-  ```bash
-  npm install socket.io@2.0.4
-  ```
 - **Arduino IDE**: You will need the arduino IDE to run the ino file
 
-  ```
-  https://www.arduino.cc/en/software
-  ```
+```
+https://www.arduino.cc/en/software
+```
 - **DHT Library**: In order to use the DHT22 or DHT11 to read temperatures you will need to get the DHT adafruit library
 
-  ```
-  https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
-  ```
+```
+https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
+```
 
 
 ## Getting Started
