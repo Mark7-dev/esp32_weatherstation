@@ -26,7 +26,7 @@ Before you begin, make sure you have the following software and hardware compone
 
 - **Node.js**: Ensure that Node.js is installed on your development machine. If not, you can download it from [nodejs.org](https://nodejs.org/).
   
-- **SerialPort**: Install the SerialPort library using npm:
+
 
 
 
@@ -51,6 +51,25 @@ DHT11 Pinout
 ![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/ec1c1350-9def-4a3b-8a01-970eeb99a9e4)
 
 <br>
+
+** There are two ways you can install the libraries ** 
+
+First: Go into your package.json and put these libraries in the dependencies
+
+```
+    "axios": "^1.5.0",
+    "express": "^4.18.2",
+    "socket.io": "^2.0.4"
+
+```
+
+After putting these libraries into your dependencies, go to the terminal and type:
+
+```
+npm install
+```
+
+- **SerialPort**: Install the SerialPort library using npm:
 
 ## Installation
 
