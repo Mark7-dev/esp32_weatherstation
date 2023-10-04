@@ -102,13 +102,16 @@ npm install serialport
 
 ## Getting Started
 
-1. Clone this repository to your local machine:
+
+
+1. Use the code from weather_app.ino and upload it to your esp32 in your arduino IDE.
+2.  Clone this repository to your local machine:
 
    ```bash
    git clone <repository-url>
    ```
 
-2. Navigate to the project folder:
+3. Navigate to the project folder:
   ```bash
    cd esp32-weather-station
    ```
