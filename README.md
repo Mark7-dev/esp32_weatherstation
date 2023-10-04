@@ -60,7 +60,6 @@ Go into your package.json and put these libraries in the dependencies
 "axios": "^1.5.0",
 "express": "^4.18.2",
 "socket.io": "^2.0.4"
-
 ```
 
 After putting these libraries into your dependencies, go to the terminal and type:
