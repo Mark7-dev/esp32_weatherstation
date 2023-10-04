@@ -25,6 +25,7 @@ Before you begin, make sure you have the following software and hardware compone
  the sensor as a DHT11 instead of a DHT22
 
 - **Node.js**: Ensure that Node.js is installed on your development machine. If not, you can download it from [nodejs.org](https://nodejs.org/).
+- **Git**: Ensure git is installed in order to clone the repository. If you do not have it downloaded you can download it from [git-scm.com/downloads](https://git-scm.com/downloads). 
   
 
 
