@@ -69,8 +69,6 @@ After putting these libraries into your dependencies, go to the terminal and typ
 npm install
 ```
 
-- **SerialPort**: Install the SerialPort library using npm:
-
 ## Installation
 
 - **SerialPort**: Install the SerialPort library using npm:
