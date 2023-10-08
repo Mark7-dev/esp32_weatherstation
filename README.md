@@ -14,6 +14,46 @@ you can display UV data such as the current UV and the max UV for the day.
 
 The website
 
+# How It Works
+
+## Overview
+
+This project utilizes an ESP32 microcontroller along with a DHT22 sensor to read temperature and humidity data. The collected data is then transmitted to a computer via the serial port. Using the Node.js environment, a web server is set up to parse this data and display it on a local website. Additionally, the project integrates with an API to provide a 7-day weather forecast.
+
+## Components
+
+### ESP32 Microcontroller
+
+The ESP32 is the core component of this project. It serves as the hardware platform responsible for reading data from the DHT22 sensor and transmitting it to the computer.
+
+### DHT22 Sensor
+
+The DHT22 sensor is employed to measure temperature and humidity. It provides accurate readings, which are critical for this project's functionality.
+
+### Serial Communication
+
+The ESP32 sends temperature and humidity data over the serial port to the connected computer. The data is transmitted in a structured format, which will be parsed and processed by the Node.js script.
+
+### Node.js and SerialPort Library
+
+Node.js is utilized to create a web server and handle the data received from the serial port. The SerialPort library is employed to establish a connection to the ESP32 and parse the data as it arrives. This data is then made available for display on a local website.
+
+### Local Web Server
+
+The Node.js script starts a local web server, enabling you to access the temperature and humidity data in real-time via a web browser on your computer. This provides a convenient and user-friendly way to monitor the environmental conditions.
+
+### Weather Forecast API
+
+In addition to displaying real-time temperature and humidity data, this project leverages a weather forecast API to fetch a 7-day weather forecast for your location. The forecast is displayed alongside the current conditions on the local website.
+
+## Workflow
+
+1. The ESP32 reads temperature and humidity data from the DHT22 sensor at regular intervals.
+2. It sends this data over the serial port to the connected computer.
+3. The Node.js script running on the computer listens to the serial port using the SerialPort library.
+4. It parses the incoming data,
+
+
 
 ## Prerequisites
 
