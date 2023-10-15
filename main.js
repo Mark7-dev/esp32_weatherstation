@@ -15,17 +15,23 @@ const { ReadlineParser } = require("@serialport/parser-readline");
 const parsers = SerialPort.parsers;
 const parser = new ReadlineParser({ delimiter: "\r\n" });
 
+const SERIAL_PORT_PATH = '/dev/cu.usbserial-10';
+//Change depending on the port you are using
+const BAUD_RATE = 9600;
+//Change baud rate in Arduino IDE when uploading code
+const DATA_BITS = 8;
+const PARITY = 'none';
+const STOP_BITS = 1;
+
 
 const port = new SerialPort.SerialPort({
-  path: "/dev/cu.usbserial-10",
-  //Change depending on the port you are using
-  baudRate: 9600,
-  dataBits: 8,
-  parity: "none",
-  stopBits: 1,
-  flowControl: false,
+  path: SERIAL_PORT_PATH,
+  baudRate: BAUD_RATE,
+  dataBits: DATA_BITS,
+  parity: PARITY,
+  stopBits: STOP_BITS,
 });
-
+//Defined values from ealier
 port.pipe(parser);
 
 var app = require('http').createServer(function(req, res){
