@@ -1,4 +1,4 @@
-![esp_diagram-min](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/4851cd1e-9256-4742-8e84-74ff10fc1960)## ESP32 Weather Station README
+## ESP32 Weather Station README
 
 This repository contains code for an ESP32 Weather Station
 that gathers data from a connected sensor and displays it
