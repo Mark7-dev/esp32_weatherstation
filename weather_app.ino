@@ -11,26 +11,17 @@ void setup() {
 }
 
 void loop() {
-  delay(1000); // Increase the delay to ensure stable readings
+  delay(1000); // Increased delay for more stable readings (adjust as needed)
 
   float h = dht.readHumidity();
   float t = dht.readTemperature();
 
-  if (isnan(h) || isnan(t)) {
-    Serial.println("Failed reception");
-    return;
+  if (!isnan(h) && !isnan(t)) {
+    // Send data as "humidity,temperature" with a comma separator
+    Serial.print(h);
+    Serial.print(",");
+    Serial.println(t);
+  } else {
+    Serial.println("Failed to read sensor data");
   }
-
-  // Serial.print("Humidity: ");
-  // Serial.print(h);
-  // Serial.print("%, ");
-  // Serial.print("Temperature: ");
-  // Serial.print(t);
-  // Serial.println("°C");
-
-  // Send data as "humidity,temperature" with a comma separator
-  Serial.print(h);
-  Serial.print(",");
-  Serial.print(t);
-  Serial.println();
 }
