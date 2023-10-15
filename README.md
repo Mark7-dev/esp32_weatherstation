@@ -1,4 +1,4 @@
-## ESP32 Weather Station README
+![esp_diagram-min](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/4851cd1e-9256-4742-8e84-74ff10fc1960)## ESP32 Weather Station README
 
 This repository contains code for an ESP32 Weather Station
 that gathers data from a connected sensor and displays it
@@ -88,7 +88,8 @@ DHT11 Pinout
 
 ![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/ad7153f9-281e-413b-8a67-81e8d8491e05)
 
-![ESP32 DHT11 setup](assets/esp_diagram.png)
+![ESP32 DHT11 setup](assets/esp_diagram-min.png)
+
 
 <br>
 
