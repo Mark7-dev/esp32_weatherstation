@@ -3,10 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather</title>
+        <title>ESP32 Weather Station></title>
+        <!-- Include external JavaScript libraries from CDNs -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
         <script src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js'></script>
         <style>
+            /* Define CSS styles for the page */
             body {
                 font-family: Arial, sans-serif;
                 margin: 0;
@@ -15,6 +17,7 @@
             }
 
             .weather-container {
+
                 background-color: #fff;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
                 text-align: center;
@@ -113,15 +116,8 @@
             </div>
         </div>
 
-        <div id="sunscreenMessage" style="display: none;">
-            <img src="https://cdn-icons-png.flaticon.com/512/3069/3069261.png" alt="Sunscreen Icon" class = "icon"/>
-            <p>You need sunscreen!</p>
-        </div>
-        
         <div class = "weather-container" id="weatherapi-weather-widget-4"></div>
         <script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=130883&wid=4&tu=1&div=weatherapi-weather-widget-4' async></script><noscript><a href="https://www.weatherapi.com/weather/q/fyshwick-130883" alt="Hour by hour Fyshwick weather">10 day hour by hour Fyshwick weather</a></noscript>
-          
-
         
         <p id = "center">Powered by <a href="https://www.weatherapi.com/" title="Weather API">WeatherAPI.com</a></p>
 
@@ -129,12 +125,6 @@
         <script>
             var element = document.getElementById("uv-index");
             var number = parseFloat(element.textContent);
-
-            if (number > 3) {
-                console.log("Put some sunscreen on!");
-            } else {
-                console.log("The number is not greater than 3.");
-            }
 
             var apiKey = "openuv-1pk7vrlmx1kufq-io";
             var latitude = -35.38;
@@ -167,12 +157,14 @@
             
 
         <script>
+            // Import the socket.io client library to establish a WebSocket connection to the server
             var socket = io();
     
             socket.on('data', function(data) {
+                // Log the received data to the browser's console
                 console.log(data);
-                document.getElementById('humidity').textContent = data.humidity;
-                document.getElementById('temperature').textContent = data.temperature;
+                document.getElementById('humidity').textContent = data.humidity;   // Update the humidity element on the page
+                document.getElementById('temperature').textContent = data.temperature;  // Update the temperature element on the page
             });
         </script> 
 
