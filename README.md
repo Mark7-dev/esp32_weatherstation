@@ -10,7 +10,7 @@ Additionally, using a free api from [Open UV](https://www.openuv.io/)
 you can display UV data such as the current UV and the max UV for the day.
 
  
-![Website](weatherstation.png)
+![Website](assets/weatherstation.png)
 
 The website
 
