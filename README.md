@@ -143,17 +143,18 @@ https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
    
 6. Close the IDE, to free up the port
 
-7. Modify the `index.html` file if needed. This HTML file is served to clients and displays weather information.
+7. Modify the "index.html" file if needed. This HTML file is served to clients and displays weather information.
 
-8. Update the `path` property in the Node.js code (`main.js`) to match the serial port where your ESP32 is connected:
+8. Update the "path" property in the Node.js code ("main.js") to match the serial port where your ESP32 is connected:
 
-   ```javascript
+```javascript
   const SERIAL_PORT_PATH = '/dev/cu.usbserial-10';
   const BAUD_RATE = 9600;
   const DATA_BITS = 8;
   const PARITY = 'none';
   const STOP_BITS = 1;
-   ```
+```
+
 
 9. Run the Node.js application:
 
