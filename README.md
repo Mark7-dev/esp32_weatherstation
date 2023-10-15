@@ -148,19 +148,19 @@ https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
 8. Update the "path" property in the Node.js code ("main.js") to match the serial port where your ESP32 is connected:
 
 ```javascript
-  const SERIAL_PORT_PATH = '/dev/cu.usbserial-10';
-  const BAUD_RATE = 9600;
-  const DATA_BITS = 8;
-  const PARITY = 'none';
-  const STOP_BITS = 1;
+const SERIAL_PORT_PATH = '/dev/cu.usbserial-10';
+const BAUD_RATE = 9600;
+const DATA_BITS = 8;
+const PARITY = 'none';
+const STOP_BITS = 1;
 ```
 
 
 9. Run the Node.js application:
 
-   ```bash
-   node app.js
-   ```
+```bash
+node app.js
+```
 
 10. Access the weather station web interface by opening a web browser and navigating to `http://localhost:6900`.
 
