@@ -18,7 +18,7 @@ The website
 
 ## Overview
 
-This project utilizes an ESP32 microcontroller along with a DHT22 sensor to read temperature and humidity data. The collected data is then transmitted to a computer via the serial port. Using the Node.js environment, a web server is set up to parse this data and display it on a local website. Additionally, the project integrates with an API to provide a 7-day weather forecast.
+This project utilises an ESP32 microcontroller along with a DHT22 sensor to read temperature and humidity data. The collected data is then transmitted to a computer via the serial port. Using the Node.js environment, a web server is set up to parse this data and display it on a local website. Additionally, the project integrates with an API to provide a 7-day weather forecast.
 
 ## Components
 
@@ -54,7 +54,6 @@ In addition to displaying real-time temperature and humidity data, this project 
 4. It parses the incoming data,
 
 
-
 ## Prerequisites
 
 Before you begin, make sure you have the following software and hardware components ready:
@@ -65,11 +64,11 @@ Before you begin, make sure you have the following software and hardware compone
  the sensor as a DHT11 instead of a DHT22
 
 - **Node.js**: Ensure that Node.js is installed on your development machine. If not, you can download it from [nodejs.org](https://nodejs.org/).
-- **Git**: Ensure git is installed in order to clone the repository. If you do not have it downloaded you can download it from [git-scm.com/downloads](https://git-scm.com/downloads). 
   
-
-
-
+- **Git**: Ensure git is installed in order to clone the repository. If you do not have it downloaded you can download it from [git-scm.com/downloads](https://git-scm.com/downloads).
+  
+- OpenUV api key (optional), if you want to display the current UV and the maximum UV you can create an account and get a free API from [openuv.io](https://www.openuv.io/).
+  
 
 ## DHT22 Wiring Guide 
 
@@ -98,8 +97,7 @@ DHT11 Pinout
 Go into your package.json and put these libraries in the dependencies
 
 ```
-"axios": "^1.5.0",
-"express": "^4.18.2",
+"serialport": "^12.0.0",
 "socket.io": "^2.0.4"
 ```
 
@@ -146,17 +144,14 @@ https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
 
 7. Modify the `index.html` file if needed. This HTML file is served to clients and displays weather information.
 
-8. Update the `path` property in the Node.js code (`app.js`) to match the serial port where your ESP32 is connected:
+8. Update the `path` property in the Node.js code (`main.js`) to match the serial port where your ESP32 is connected:
 
    ```javascript
-   const port = new SerialPort.SerialPort({
-     path: "/dev/cu.usbserial-10", // Update this path
-     baudRate: 9600,
-     dataBits: 8,
-     parity: "none",
-     stopBits: 1,
-     flowControl: false,
-   });
+  const SERIAL_PORT_PATH = '/dev/cu.usbserial-10';
+  const BAUD_RATE = 9600;
+  const DATA_BITS = 8;
+  const PARITY = 'none';
+  const STOP_BITS = 1;
    ```
 
 9. Run the Node.js application:
@@ -166,6 +161,48 @@ https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
    ```
 
 10. Access the weather station web interface by opening a web browser and navigating to `http://localhost:6900`.
+
+## UV data (optional)
+
+1. Get an OpenUV api key from [openuv.io](https://www.openuv.io/).
+2. In the script section located in index.html change the variable "apiKey" to your API key, keep the quotation marks
+3. Change the variables longitude and latitude to your longitude and latitude.
+
+   ```javascript
+       <script>
+            var element = document.getElementById("uv-index");
+            var number = parseFloat(element.textContent);
+
+            var apiKey = "YOUR_API_KEY";
+            var latitude = YOUR_LATITUDE;
+            var longitude = YOUR_LONGITUDE;
+            
+            var myHeaders = new Headers();
+            myHeaders.append("x-access-token", apiKey);
+            myHeaders.append("Content-Type", "application/json");
+            
+            var requestOptions = {
+              method: 'GET',
+              headers: myHeaders,
+              redirect: 'follow'
+            };
+            
+            // Fetch UV data from the OpenUV API
+            fetch(`https://api.openuv.io/api/v1/uv?lat=${latitude}&lng=${longitude}&alt=100&dt=`, requestOptions)
+              .then(response => response.json())
+              .then(data => {
+                // Update the HTML elements with UV data
+                document.getElementById('uv-index').textContent = data.result.uv;
+                document.getElementById('max-uv-index').textContent = data.result.uv_max;
+                document.getElementById('ozone').textContent = data.result.ozone;
+                // Add code to display other relevant data if needed
+              })
+              .catch(error => console.log('Error:', error));
+
+              
+            </script>
+            
+   ```
 
 ## Usage
 
@@ -184,8 +221,7 @@ https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
 - Node.js
 - Socket.io v2.0.4
 - SerialPort v12.0.0
-- Express v4.18.2
-- Johnny-five v2.1.0
+
 
 ## Acknowledgments
 
