@@ -88,7 +88,7 @@ DHT11 Pinout
 
 ![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/ad7153f9-281e-413b-8a67-81e8d8491e05)
 
-![ESP32 DHT11 setup](assets/esp_diagram-min.png)
+![ESP32 DHT11 setup](assets/weather_diagram.png)
 
 
 <br>
