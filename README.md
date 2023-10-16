@@ -128,7 +128,7 @@ https://www.arduino.cc/reference/en/libraries/dht-sensor-library/
 2.  Clone this repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Mark7-dev/esp32_weatherstation
    ```
 
 3. Navigate to the project folder:
@@ -159,7 +159,7 @@ const STOP_BITS = 1;
 9. Run the Node.js application:
 
 ```bash
-node app.js
+node main.js
 ```
 
 10. Access the weather station web interface by opening a web browser and navigating to `http://localhost:6900`.
@@ -220,7 +220,6 @@ node app.js
 
 ## Dependencies
 
-- Node.js
 - Socket.io v2.0.4
 - SerialPort v12.0.0
 
