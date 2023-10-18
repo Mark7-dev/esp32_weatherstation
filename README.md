@@ -12,7 +12,24 @@ you can display UV data such as the current UV and the max UV for the day.
  
 ![Website](assets/weatherstation.png)
 
-The website
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#how-it-works">How it works</a></li>
+    <li><a href="#components">Components</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#dht22-and-dht22-wiring-guide ">DHT22 and DHT22 Wiring Guide</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
+    <li><a href="#uv-data-optional">UV Data</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#author">Author</a></li>
+    <li><a href="#dependencies">Dependencies</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+
+  </ol>
+</details>
+
 
 # How It Works
 
@@ -46,14 +63,6 @@ The Node.js script starts a local web server, enabling you to access the tempera
 
 In addition to displaying real-time temperature and humidity data, this project leverages a weather forecast API to fetch a 7-day weather forecast for your location. The forecast is displayed alongside the current conditions on the local website.
 
-## Workflow
-
-1. The ESP32 reads temperature and humidity data from the DHT22 sensor at regular intervals.
-2. It sends this data over the serial port to the connected computer.
-3. The Node.js script running on the computer listens to the serial port using the SerialPort library.
-4. It parses the incoming data,
-
-
 ## Prerequisites
 
 Before you begin, make sure you have the following software and hardware components ready:
@@ -68,9 +77,15 @@ Before you begin, make sure you have the following software and hardware compone
 - **Git**: Ensure git is installed in order to clone the repository. If you do not have it downloaded you can download it from [git-scm.com/downloads](https://git-scm.com/downloads).
   
 - OpenUV api key (optional), if you want to display the current UV and the maximum UV you can create an account and get a free API from [openuv.io](https://www.openuv.io/).
+
+- At the top of your HTML file you will need to add a CDN for the socketio library
+
+```
+<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+```
   
 
-## DHT22 Wiring Guide 
+## DHT22 and DHT22 Wiring Guide 
 
 Connect the VCC to the 3v3
 <br>
