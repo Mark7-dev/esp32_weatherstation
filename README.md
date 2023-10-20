@@ -92,7 +92,7 @@ Connect GND to GND
 <br>
 Connect S to GPIO 17 (data)
 
-![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/f40ea14d-d420-40b8-a308-ef8e8bd0305f)
+![image](assets/dht_pinout.jpg)
 
 Wiring guide for the DHT22
 
@@ -100,7 +100,7 @@ DHT11 Wiring Guide
 <br>
 DHT11 Pinout
 
-![image](https://github.com/Mark7-dev/esp32_weatherstation/assets/88635428/ad7153f9-281e-413b-8a67-81e8d8491e05)
+![image](assets/dfrobot.png)
 
 ![ESP32 DHT11 setup](assets/weather_diagram.png)
 
