@@ -12,10 +12,9 @@ you can display UV data such as the current UV and the max UV for the day.
  
 ![Website](assets/weatherstation.png)
 
-<details>
-  <summary>Table of Contents</summary>
+# Table of contents
   <ol>
-    <li><a href="#how-it-works">How it works</a></li>
+    <li ><a href="#how-it-works">How it works</a></li>
     <li><a href="#components">Components</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#dht22-and-dht22-wiring-guide ">DHT22 and DHT22 Wiring Guide</a></li>
@@ -28,7 +27,7 @@ you can display UV data such as the current UV and the max UV for the day.
     <li><a href="#acknowledgments">Acknowledgments</a></li>
 
   </ol>
-</details>
+
 
 
 # How It Works
