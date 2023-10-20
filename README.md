@@ -92,7 +92,7 @@ Connect GND to GND
 <br>
 Connect S to GPIO 17 (data)
 
-![image](assets/_pinout.jpg)
+![image](assets/dht_pinout.jpg)
 
 Wiring guide for the DHT22
 
