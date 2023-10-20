@@ -244,12 +244,13 @@ node main.js
 - Thanks to the open-source community for providing the necessary libraries and tools to build this weather station.
 
 **Resources used:** 
-- https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
-- https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/
-- https://www.upesy.com/blogs/tutorials/dht11-humidity-temperature-sensor-with-arduino-code-on-esp32-board#
+- [Writing a good README](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+- [DHT11/DHT22 Web Server](https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-web-server-arduino-ide/)
+- [DHT11/DHT22 Arduino Code](https://www.upesy.com/blogs/tutorials/dht11-humidity-temperature-sensor-with-arduino-code-on-esp32-board#)
 - https://medium.com/@svsh227/nodejs-with-arduino-5020489f3ec7
-- https://www.engineersgarage.com/how-to-build-a-node-js-server-to-control-arduino-from-a-webpage/
-- https://www.openuv.io/
+- [How to make a web socket](https://www.engineersgarage.com/how-to-build-a-node-js-server-to-control-arduino-from-a-webpage/)
+- [Open UV](https://www.openuv.io/) 
+- [Communicating between the serialport and Node.JS](https://www.youtube.com/watch?v=__FSpGHx9Ow)
 
 **Images used:**
 - https://www.flaticon.com/free-icon/thermometer_4158502
