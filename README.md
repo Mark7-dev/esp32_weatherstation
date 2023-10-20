@@ -12,8 +12,7 @@ you can display UV data such as the current UV and the max UV for the day.
  
 ![Website](assets/weatherstation.png)
 
-<details>
-  <summary style="font-size: x-large">Table of Contents</summary>
+## Table of contents
   <ol>
     <li ><a href="#how-it-works">How it works</a></li>
     <li><a href="#components">Components</a></li>
@@ -28,7 +27,7 @@ you can display UV data such as the current UV and the max UV for the day.
     <li><a href="#acknowledgments">Acknowledgments</a></li>
 
   </ol>
-</details>
+
 
 
 # How It Works
